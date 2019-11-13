@@ -1,0 +1,28 @@
+<body>
+    <script>
+        function add()
+       // {
+        //    return this.a+this.b+m+n;
+        //}
+        //var b1={a:10,b:20}// op=30
+        //var b1={a:"hai", b:"hello"}// op=haihello
+        //var b1={a:"hai",b:20}//op=hai20
+        //var b1={a:true,b:false}//op-1*/
+
+// {
+
+//         var b1={a:[1,2,3,4],b:[10,20,30]}
+//         console.log( add.call(b1));//op-1,2,3,410,20,30
+//        console.log(typeof add.call(b1));
+//       }
+     {  
+       m=[5,6,7,4];
+       n=10;
+       var b1={a:[1,2,3,4],b:[10,20,30]}
+       console.log( add.call(b1,m,n));     //call method
+
+       var b1={a:[1,2,3,4],b:[10,20,30]}
+      console.log( add.apply(b1));       //apply method 
+    }
+        </script>
+</body>

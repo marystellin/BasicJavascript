@@ -1,0 +1,21 @@
+.cas{
+    background-color: green;
+    width: 100px;
+}
+h1{
+   
+    text-align: center;
+}
+.nav{
+    text-align: right;
+    list-style-type: none;
+    display:inline;
+}
+.nav >img:hover{
+    float: right;
+    background-color: aquamarine;
+
+}
+.nav >img> figcaption{
+    text-align: center;
+}

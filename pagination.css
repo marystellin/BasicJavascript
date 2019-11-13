@@ -1,0 +1,28 @@
+body{
+
+    background-color: aqua;
+}
+.page
+{
+    text-align: center;
+}
+
+#butto
+{
+    list-style-type: none;
+    text-align: center;
+}
+#id01
+{
+
+    padding:3pc ;
+    text-align: center;
+    width: 94%;
+    margin: auto;
+    margin-bottom: 226px;
+
+}
+table
+{
+
+}

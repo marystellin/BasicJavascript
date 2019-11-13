@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="value"></div>
+    <script>
+        function getKey(key)
+        {
+            var n=Object.keys(key);
+            return n;
+        }
+        var result=getKey({name:"ruby",
+                     department:"mca"});
+                     var m=JSON.stringify(result);
+document.getElementById("value").innerHTML=m;
+    </script>
+</body>
+</html>

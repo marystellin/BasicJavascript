@@ -1,0 +1,55 @@
+<body>
+    <form onsubmit="return false;">
+    Enter date:<input type="text" id="h1" placeholder="day">
+    Enter month:<input type="text" id="h2" placeholder="month">
+    Enter year:<input type="text" id="h3" placeholder="year">
+    <button onclick="yearCalc()"> Know your birth day</button>
+    <button onclick="buyAge()">Buy Your Age</button>
+</form>
+<span id="show"></span>
+<span id="show1"></span>
+<span id="show2"></span>
+</body>
+<script>
+    function yearCalc(){
+        var day=document.getElementById("h1").value;
+        var month=document.getElementById("h2").value;
+        var year=document.getElementById("h3").value;
+        val=new Date(year,month-1,day);
+        console.log(val);
+        buyMonth=Array(12);
+        buyMonth[0]="jan";
+        buyMonth[1]="feb";
+        buyMonth[2]="mar";
+        buyMonth[3]="apr";
+        buyMonth[4]="may";
+        buyMonth[5]="june";
+        buyMonth[6]="july";
+        buyMonth[7]="aug";
+        buyMonth[8]="sep";
+        buyMonth[9]="oct";
+        buyMonth[10]="nov";
+        buyMonth[11]="dec";
+        val1=buyMonth[val.getUTCMonth()];
+        document.getElementById("show").innerHTML=val1;
+        //console.log(buyMonth);
+        
+        buyDay=Array(7);
+        buyDay[0]="mon";
+        buyDay[1]="tues";
+        buyDay[2]="wed";
+        buyDay[3]="thurs";
+        buyDay[4]="fri";
+        buyDay[5]="sat";
+        buyDay[6]="sun";
+        val2=buyDay[val.getDay()];
+        document.getElementById("show1").innerHTML=val2;
+    }
+    function buyAge(){
+        birthyear=document.getElementById("h3").value;
+        Year=new Date();
+        originalYear=[Year.getFullYear()];
+        age=birthyear-originalYear;
+        document.getElementById("show2").innerHTML=age;
+    }
+</script>

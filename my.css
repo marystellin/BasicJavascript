@@ -1,0 +1,41 @@
+.body{
+    margin: 0%;
+    padding: 0% ;
+}
+.h1>center
+{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 100;
+}
+.navbar > ul >li
+{ 
+
+    list-style-type: none;
+    float: right;
+    padding:1pc ;
+    text-decoration: underline;
+}
+.navbar > ul >li:hover
+{
+color:red;
+background-color: aqua;
+}
+.navbar>ul>li{
+    background-color:cornflowerblue;
+
+}
+.logo
+{
+    display: inline;
+}
+.image{
+    display: inline;
+}
+.content>p>{
+    float:right;
+ margin-top:-555px;
+ margin-left:600px;
+    font-family: 'Indie Flower', cursive;
+    font-size: x-large;
+    
+}

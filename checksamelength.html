@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+   <div id=samelength></div> 
+   <script>
+       function checklength(x,y)
+       {
+          var a=x.length;
+          var b=y.length;
+          if(a==b)
+          {
+              return true;
+          }
+          else
+          {
+              return false;
+          }
+
+       }
+       var result=checklength("mary","stellin");
+document.getElementById('samelength').innerHTML=result;
+   </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="asert"></div>
+    <script>
+        function asertObject(a,b)
+        {
+            if(JSON.stringify(a)===JSON.stringify(b))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        var result=asertObject({name:"ruby",age:21,  department:"MCA" }, {name:"mary",age:22, department:"BSC"});
+        if(result==true)
+        {
+            document.getElementById("asert").innerHTML="pass";
+        }
+        else
+        {
+            document.getElementById("asert").innerHTML="fail";
+            
+        }
+                 
+ </script>
+</body>
+</html>

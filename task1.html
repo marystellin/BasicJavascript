@@ -1,0 +1,40 @@
+<!-- <body>
+    <div id="root"></div>
+<form onsubmit="return false;">
+    Enter the number:<input type="text" id="h1"></input>
+    <button onclick="add()">submit</button>
+</form>
+</body>
+<script>
+    function add(){
+        var n=document.getElementById("h1").value;
+        result="";
+        for(i=1;i<=n;i++)
+        {
+        result+=" "+(i+i*i*i);
+        console.log(result);
+    
+        }
+        document.getElementById("root").innerHTML=result;     
+}
+</script> -->
+
+<!-- <script>
+const res=[1,2,3,4]
+const a=res.map(b=>b%2);
+console.log(b);
+</script> -->
+
+
+<script>
+    function result(a,b,cb){
+        c=a+b;
+        cb(c);
+    }
+    result(5,6,function(bal){
+        result=bal/2;
+        console.log(result);
+    })
+</script>
+
+

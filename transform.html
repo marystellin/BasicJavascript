@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="transform"></div>
+    <script>
+        function firstAndlast(arr)
+        {
+           var x={};
+           var y=arr[0];
+           var z=arr[arr.length-1];
+            x[y]=z;
+        
+            return JSON.stringify(x);
+        }
+        var result=firstAndlast(["name","ruby","MCA","AGE"]);
+        document.getElementById("transform").innerHTML=result;
+    </script>
+</body>
+</html>

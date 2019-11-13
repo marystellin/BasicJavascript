@@ -1,0 +1,29 @@
+<body>
+    <div id="add"></div>
+    <form onsubmit="return false;">
+    Enter count:<input type="text" id="h1">
+    Enter first number:<input type="text" id="h2">
+    Enter second number:<input type="text" id="h3">
+    <button onclick="sum()">submit</button>
+    </form>
+</body>
+<script>
+    function sum(){
+        var a=parseInt(document.getElementById("h1").value);
+        var b=parseInt(document.getElementById("h2").value);
+        var c=parseInt(document.getElementById("h3").value);
+        result=b;
+        x=0;
+        result+=" "+c;
+        console.log(result);
+        for(i=1;i<=a;i++)
+        {
+            value=x+b+c;
+            result+=" "+value;
+            x=b;
+            b=c;  
+            c=value;
+        }
+        document.getElementById("add").innerHTML=result;
+    }
+</script>

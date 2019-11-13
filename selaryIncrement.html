@@ -1,0 +1,46 @@
+<html>
+    <head>
+    <body>
+        <div id="demo">
+
+        </div>
+    </body>
+
+<script>
+    function ageViceselaryIncrement(data)
+    {
+        var newIncrementSelary=[];
+        data.forEach(employee => {
+            if(employee.age<=50)
+            {
+                var Incselary=employee.selary*5/10;
+                var newselay=Incselary+employee.selary;
+                newIncrementSelary.push({
+                    name:employee.name,
+                    age:employee.age,
+                    selary:newselay
+                });
+            }
+            else
+            {
+                
+            }
+        });
+return JSON.stringify(newIncrementSelary);
+    }
+    var result=ageViceselaryIncrement([{
+        name:"ruby",
+        age:22,
+        selary:50000
+    },
+    {
+        name:"mary",
+        age:22,
+        selary:30000
+    }
+    ]);
+    //var n=JSON.stringify(result);
+    document.getElementById("demo").innerHTML=result;
+</script>
+</head>
+</html>

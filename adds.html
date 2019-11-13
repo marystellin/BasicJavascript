@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="contend">
+
+    </div>
+    <form action="alpha.php" onclick="myfun(); return false";>
+<input type="text" id="num1" required>
+<input type="text" id="num2" required>
+<h1>a2</h1>
+<input type="submit" value="add">
+    </form>
+<script>
+    function myfun(){
+        var a=document.getElementById("num1").value;
+        var b=document.getElementById("num2").value;
+        var c=parseInt(a)+parseInt(b);
+        document.getElementById("contend").innerHTML=c;
+
+    }
+</script>
+
+</body>
+</html>

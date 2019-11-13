@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="addkey"></div>
+    <script>
+        function addobj(obj,key)
+        {
+            obj[key]=true;
+            return obj;
+        }
+        var result=addobj({name:"ruby", age:22},"email");
+        var n=JSON.stringify(result);
+        document.getElementById('addkey').innerHTML=n;
+    </script>
+</body>
+</html>

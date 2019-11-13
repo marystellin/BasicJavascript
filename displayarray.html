@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="getarr"></div>
+    <script>
+        function getelement(obj)
+        {
+            var outer=[];
+            key=Object.keys(obj);
+            key.forEach(element => {
+               var inner=[];
+            inner.push(element,obj[element])
+            outer.push(inner);                
+            });
+            return JSON.stringify(outer);
+        }
+        var result=getelement({name:"ruby",
+                            department:"MCA",
+                            contact:779488});
+        document.getElementById("getarr").innerHTML=result;
+
+    </script>
+</body>
+</html>

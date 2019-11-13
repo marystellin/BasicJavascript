@@ -1,0 +1,52 @@
+<body>
+    <script>
+        //var a=5+undefined; //NaN
+        //var a=5+null; //5
+        //console.log(a);
+
+
+       /* function foo()
+        {
+            console.log("hello");
+            foo();
+        }   maximum stack size overflow
+        */
+
+/*        var func = function() {
+        alert('hello!');
+        };
+func.apply(); vs 
+func.call();*/
+/*function add(arr)
+{
+    return this.a+this.b;
+
+}
+var result={
+    a:"ruby", 
+    b:"mary"
+};
+var arr=["a","b","c"]
+console.log(add.apply(result));*/
+
+
+/*function Student(registrationNo) {  
+    this.registrationNo = registrationNo;  
+}  
+var amit = new Student(123);  
+document.write(amit.registrationNo);
+//document.write(window.registrationNo);*/
+
+class Student {  
+    constructor(name, rollno) {  
+        this.name = name;  
+        this.rollno = rollno;  
+    }  
+    getStudentDetails() {  
+        return "Student: " + this.name + ", Roll No: " + this.rollno;  
+    }  
+}  
+var ross = new Student("Ross", 1);  
+document.write(ross.getStudentDetails());
+        </script>
+</body>

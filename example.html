@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body bgcolor="aqua">
+   <marquee> <center><h1 style="background-color:royalblue">CALCULATOR</h1></center></marquee>
+  <center>
+      <form action="calc" onsubmit="return false;">
+<input type="text" id="num1" required>
+<input type="text" id="num2" required>
+<div id="a1"></div>
+
+<button onclick="add()">add</button>
+<button onclick="sub()">sub</button>
+<button onclick="mul()">mul</button>
+<button onclick="div()">div</button><br><br><br>
+<img src="calc.jpg" alt="cal">
+</form>
+</center> 
+<script>
+    function add(){
+        var a=document.getElementById("num1").value;
+        var b=document.getElementById("num2").value;
+        var result=parseFloat(a)+parseFloat(b);
+        if(!isNaN(result))
+        {
+            document.getElementById("a1").innerHTML="ANSWER IS"+"  "+result;
+        }
+        
+    }
+    function sub(){
+        var a=document.getElementById("num1").value;
+        var b=document.getElementById("num2").value;
+        var result=parseFloat(a)-parseFloat(b);
+        if(!isNaN(result))
+        {
+            document.getElementById("a1").innerHTML="ANSWER IS"+"  "+result;
+        }
+        
+    }
+    function mul(){
+        var a=document.getElementById("num1").value;
+        var b=document.getElementById("num2").value;
+        var result=parseFloat(a)*parseFloat(b);
+        if(!isNaN(result))
+        {
+            document.getElementById("a1").innerHTML="ANSWER IS"+"  "+result;
+        }
+        
+    }
+    function div(){
+        var a=document.getElementById("num1").value;
+        var b=document.getElementById("num2").value;
+        var result=parseFloat(a)/parseFloat(b);
+        if(!isNaN(result))
+        {
+            document.getElementById("a1").innerHTML="ANSWER IS"+"  "+result;
+        }
+    }
+      
+</script>
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+   <h1>sum of 2 numbers</h1>
+   <form action="" onsubmit="return false"> 
+   <input type="text" id="num1" required> 
+   <input type="text" id="num2" required>
+   <input type="button" onclick="add()" value="add">
+   </form>
+   <div id="sum"></div>
+</body>
+   <script>
+   function add()
+   {
+       var a=parseInt(document.getElementById('num1').value);
+       var b=parseInt(document.getElementById('num2').value);
+       var c=a+b;
+       if(!isNaN(c))
+       {
+           document.getElementById('sum').innerHTML=c;
+       }
+
+
+   }   
+   </script>
+</html>

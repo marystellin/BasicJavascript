@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        #str1
+        {
+          height: 100px;
+          width:  100px;
+          background-color: aqua;  
+        }
+        #str2
+        {
+         height: 100px;
+         width: 100px;
+         background-color: blueviolet;   
+        }
+    </style>
+</head>
+<body>
+<div id="str1"> <h2> i am div1</h2></div>
+<div id="str2"> <h2> i am div2</h2></div>
+<script>
+    function swap()
+    {
+    var a=document.getElementById("str1").innerHTML;
+    var b=document.getElementById("str2").innerHTML;
+    document.getElementById("str1").innerHTML=b;
+    document.getElementById("str2").innerHTML=a;
+    }
+</script>
+<button onclick="swap()">swap</button>
+</body>

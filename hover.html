@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #img{
+            height: 500px;
+            width: 500px;
+        }
+        
+    </style>
+
+<body>
+    
+        <img onmouseover="first()" onmouseout="last()" id="img" src="">
+        <script>
+        var inn =document.getElementById("img");
+        var pic=["img1.jpeg","img2.jpeg","img3.jpeg","img4.jpeg","img5.jpeg","img6.jpeg"];
+        var index=0;
+        var out;
+        function imagechanging()
+        {
+            inn.setAttribute("src",pic[index]);
+            index++;
+            if(index==pic.length)
+            {
+                index=0;
+            }
+        } 
+         function first()
+         {
+             out=setInterval(imagechanging,1000);
+         }
+         function last()
+         {
+             clearInterval(out);
+         }
+    </script>
+    </head>
+</body>
+
+</html>

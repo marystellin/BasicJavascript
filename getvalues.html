@@ -1,0 +1,20 @@
+<html>
+    <head>
+</head>
+<body>
+    <div id="getvalues"></div>
+    <script>
+        function printAllValue(obj)
+        {
+            var output = [];
+            var n=Object.keys(obj);
+        n.forEach(element => {
+            output.push(obj[element]);
+        });
+        return output;
+    }
+        var result=printAllValue({name:"ruby",department:"mca"});
+        document.getElementById("getvalues").innerHTML=result;
+    </script>
+</body>
+</html>

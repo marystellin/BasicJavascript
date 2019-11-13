@@ -1,0 +1,22 @@
+<body>
+    <div id="sum"></div>
+    Enter value1:<input type="text" id="h1">
+    Enter value2:<input type="text" id="h2">
+    <button onclick="add()">submit</button>
+</body>
+<script>
+    function add(){
+        var a=parseInt(document.getElementById("h1").value);
+        var b=parseInt(document.getElementById("h2").value);
+        result=b;
+        c=0;
+        for(i=1;i<=a;i++)
+        {
+            c=b+5;
+            result+=" "+c;
+            console.log(result);
+            b=c;
+        }
+        document.getElementById("sum").innerHTML=result;
+    }
+</script>

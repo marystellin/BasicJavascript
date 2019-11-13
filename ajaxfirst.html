@@ -1,0 +1,37 @@
+<html>
+
+<head>
+    <title>AJAX FIRST PROGRAM</title>
+</head>
+
+<body onload="sendData()">
+    <input type="text" id="getObject"  placeholder="enter your search" list="objects">
+    <datalist id="objects"></datalist>
+    <script>
+        var data, result;
+        function sendData() {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    //var n=this.responseText;
+                    //var n=JSON.parse(userEmail);
+                    //document.getElementById("demo").innerHTML=this.responseText;
+
+                    // console.log(JSON.parse(this.responseText));
+                    var data = JSON.parse(this.responseText);
+
+                }
+                data.forEach(element => {
+                    result = "<option>" + element.userEmail + "</option>";
+                    document.getElementById("objects").innerHTML += result;
+                });
+            }
+            xhttp.open('GET', "http://5cdd0a92b22718001417c19d.mockapi.io/api/userinfo", true);
+            xhttp.send();
+
+        }
+
+    </script>
+</body>
+
+</html>
